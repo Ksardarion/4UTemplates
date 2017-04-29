@@ -1,0 +1,56 @@
+@import "partials/colors";
+@import "partials/typography";
+
+.btn-nav {
+  border-radius: 0;
+  background-color: #fff;
+  border: 1px solid $text-dark;
+  color: $text-dark;
+  text-transform: uppercase;
+  font-size: $nav-font-size;
+  // font-weight: bold;
+  padding: 5px 10px;
+
+  vertical-align: middle;
+
+  transition: color .1s;
+
+  &:hover {
+    color: $accent-color;
+    background-color: #fff;
+  }
+
+  &:focus,
+  &:focus:active {
+    background-color: #fff;
+  }
+}
+
+.btn-nav.login {
+  text-transform: capitalize;
+  min-width: 152px;
+}
+
+.btn-primary {
+	background-color: #FFF;
+	border-radius: 0;
+	border: 1px solid $text-dark;
+	color: $text-dark;
+	text-transform: capitalize;
+  font-size: $btn-primary-font-size;
+  padding: 4px 50px;
+	width: 100%;
+
+	&:hover{
+		color: #FF5274;
+    text-decoration: none;
+    // background-color: #e6e6e6;
+    border-color: #adadad;
+	}
+  &:hover,
+  &:focus,
+  &:focus:active {
+    background-color: #fff;
+    color: $text-dark;
+  }
+}

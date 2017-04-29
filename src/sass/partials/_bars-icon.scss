@@ -1,0 +1,43 @@
+// basic tamplate
+// <a class="bars-icon">
+//   <span class="bars"></span>
+// </a>
+
+$navicon-height: 25px;
+$navicon-width: 25px;
+$bars-margin: 6px;
+$bar-height: 3px;
+
+.bars-icon {
+  display: inline-block;
+  position: relative;
+  height: $navicon-height;
+  width: $navicon-width;
+  vertical-align: top;
+  margin-right: 9px;
+  transition: all 300ms ease-in-out;
+}
+
+.bars, .bars:before, .bars:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: $navicon-width;
+  height: $bar-height;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: #333;
+  cursor: pointer
+}
+
+span.bars {
+  top: $navicon-height / 2 - $bar-height / 2 ;
+}
+
+.bars:before {
+  top: -$bars-margin;
+}
+.bars:after {
+  bottom: -$bars-margin;
+}

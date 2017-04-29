@@ -1,0 +1,21 @@
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/buttons";
+
+body {
+  font-family: $font;
+  min-width: 380px;
+}
+
+@import "partials/header";
+
+// for stratch slides image
+#main-slider {
+  margin-top: 19px;
+}
+
+#main-slider img {
+    min-width: 100%;
+}
+
+@import "partials/footer";

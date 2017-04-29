@@ -1,0 +1,99 @@
+
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/buttons";
+
+body {
+  font-family: $font;
+  min-width: 380px;
+}
+// psd template width is 815px so we must cotrol the container width
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+// styles for HEADER
+@import "partials/header";
+
+/* ==========================================================================
+    SLIDER
+========================================================================== */
+#main-slider {
+  margin-top: 44px;
+
+  img {
+    min-width: 100%;
+  }
+
+  .carousel-control {
+    transition: opacity .3s;
+  }
+
+  .carousel-control { opacity: 0; }
+  &:hover .carousel-control { opacity: 1; }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    height: auto;
+    width: 50%;
+    margin: -15% 0 0 0;
+    display: inline-block;
+    text-align: left;
+    color: $text-slider;
+    font-weight: bold;
+    text-shadow: 0 1px 0px rgba(255, 255, 255, 0.3);
+    font-size: $font-size-slider;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 970px) {
+  #main-slider .carousel-caption {
+    font-size: $font-size-slider970;
+  }
+}
+
+/* ==========================================================================
+    BLOG
+========================================================================== */
+a.thumbnail {
+  border: none;
+}
+
+section h3 {
+  display: inline-block;
+  margin-top: 0;
+}
+
+#blog {
+  margin-top: 53px;
+}
+
+.all {
+  @import "partials/navicon";
+
+  display: inline-block;
+  position: relative;
+  float: right;
+
+  h3 {
+    vertical-align: middle;
+    margin: 0 0 0 12px;
+    display: inline-block;
+  }
+}
+
+.section-header {
+  padding: 0 11px;
+}
+.section-content {
+  margin-top: 6px;
+}
+
+// FOOTER
+@import "partials/footer";

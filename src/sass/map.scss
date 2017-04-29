@@ -1,0 +1,30 @@
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/header";
+@import "partials/footer";
+
+body {
+  font-family: $font;
+  min-width: 380px;
+}
+
+// psd template width is 815px so we must cotrol the container width
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+#categories{
+  margin-top: 38px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width:991px) {
+  #search-form {
+    margin-bottom: 35px;
+  }
+}
+
+@import "partials/categories_list";

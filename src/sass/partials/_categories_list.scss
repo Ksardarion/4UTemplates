@@ -1,0 +1,14 @@
+@import "partials/colors";
+@import "partials/typography";
+.category-list{
+	ul li a{
+		color: $text-dark;
+		font-size: $categories-list-font-size;
+		padding: 3px;
+		display: block;
+		&:hover{
+			background-color: #b1b1b1;
+    		color: white;
+		}	
+	}
+}

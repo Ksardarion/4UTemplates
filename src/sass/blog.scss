@@ -1,0 +1,150 @@
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/buttons";
+
+body {
+  font-family: $font;
+  min-width: 380px;
+}
+
+.mt25 {
+  margin-top: 25px;
+}
+
+.padding-left-wrapper {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .padding-left-wrapper {
+    padding-left: 0px;
+  }
+}
+
+// psd template width is 815px so we must cotrol the container width
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@import "partials/header";
+
+@import "partials/blog/typography";
+
+#main-article {
+  h2 {margin-top: 0;}
+}
+
+p.primary {
+  font-weight: bold;
+  font-size: $p-primary-font-size;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+/* ==========================================================================
+    RIGHT COLUMN
+========================================================================== */
+.advertisment {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 65px;
+  width: 100%;
+  display: inline-block;
+  font-size: $advertisment-font-size;
+  background-color: $advertisment-bg;
+  font-style: italic;
+}
+
+.posts {
+  .post {
+    margin-top: 12px;
+  }
+
+  .post:first-child {
+    margin-top: 0;
+  }
+
+  a.read-more {
+    display: block;
+    color: $blog-post-color;
+    font-size: $main-article-p-font-size;
+    margin-top: 15px;
+  }
+
+  p {
+    color: $blog-post-color;
+  }
+
+  h4 {
+    margin: 32px 0;
+  }
+}
+
+/* ==========================================================================
+    NEWSLETTERS
+========================================================================== */
+
+.newsletters {
+  input,
+  .btn {
+    border-radius: 0;
+    border: 1px solid $black;
+  }
+
+  input {
+    border: 1px solid $black;
+    color: $black;
+
+    &::-webkit-input-placeholder {
+      color: $black;
+      font-style: italic;
+    }
+    &:-moz-placeholder {
+      color: $black;
+      font-style: italic;
+    }
+    &::-moz-placeholder {
+      color: $black;
+      font-style: italic;
+    }
+    &:-ms-input-placeholder {
+      color: $black;
+      font-style: italic;
+    }
+  }
+
+  .btn {
+    background-color: $light-blue;
+    width: 56px;
+
+    &:focus:active {
+      background-color: $blue;
+    }
+  }
+}
+
+/* ==========================================================================
+    NEWS IN THE BOOTOM OF PAGE
+========================================================================== */
+
+#news {
+  .media:first-child {
+    margin-top: 31px;
+  }
+
+  a.read-more {
+    margin-top: 9px;
+    display: block;
+    font-style: italic;
+    color: $read-more-2c;
+  }
+}
+
+@import "partials/footer";
+
+footer {
+  margin-top: 39px;
+}
