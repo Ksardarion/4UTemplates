@@ -26,5 +26,4 @@ $('#mobile-menu').click(function(e) {
   e.stopPropagation();
   $('#toggle-mobile-navigation .nav-toggle').toggleClass('active');
   $('.header-nav').toggleClass('open');
-
 });
