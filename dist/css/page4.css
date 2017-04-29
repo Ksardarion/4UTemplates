@@ -96,6 +96,12 @@ body {
   min-width: 380px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
 .pos-relative {
   position: relative;
 }
@@ -619,6 +625,123 @@ header .nav-toggle.active span:after {
 
 #main-slider img {
   min-width: 100%;
+}
+
+/* ==========================================================================
+    BLOG
+========================================================================== */
+a.thumbnail {
+  border: none;
+}
+
+section h3 {
+  display: inline-block;
+  margin-top: 0;
+}
+
+#blog {
+  margin-top: 53px;
+}
+
+.all {
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+.all .navicon {
+  display: inline-block;
+  position: relative;
+  height: 26px;
+  width: 25px;
+  vertical-align: middle;
+  transition: all 300ms ease-in-out;
+}
+
+.all .header-nav.open {
+  visibility: visible;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.all .nav-toggle {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding: 10px 35px 16px 0;
+  cursor: pointer;
+}
+
+.all .nav-toggle:focus {
+  outline: none;
+}
+
+.all .nav-toggle span, .all .nav-toggle span:before, .all .nav-toggle span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 3px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: #333;
+  cursor: pointer;
+}
+
+.all .nav-toggle span:before {
+  top: -6px;
+}
+
+.all .nav-toggle span:after {
+  bottom: -6px;
+}
+
+.all .nav-toggle span, .all .nav-toggle span:before, .all .nav-toggle span:after {
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.all .nav-toggle.active span {
+  background-color: transparent;
+}
+
+.all .nav-toggle.active span:before, .all .nav-toggle.active span:after {
+  top: 0;
+}
+
+.all .nav-toggle.active span:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.all .nav-toggle.active span:after {
+  top: 6px;
+  -moz-transform: translatey(-6px) rotate(-45deg);
+  -ms-transform: translatey(-6px) rotate(-45deg);
+  -o-transform: translatey(-6px) rotate(-45deg);
+  -webkit-transform: translatey(-6px) rotate(-45deg);
+  transform: translatey(-6px) rotate(-45deg);
+}
+
+.all h3 {
+  vertical-align: middle;
+  margin: 0 0 0 12px;
+  display: inline-block;
+}
+
+.section-header {
+  padding: 0 11px;
+}
+
+.section-content {
+  margin-top: 6px;
 }
 
 footer {

@@ -7,6 +7,12 @@ body {
   min-width: 380px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
 @import "partials/header";
 
 // for stratch slides image
@@ -17,5 +23,43 @@ body {
 #main-slider img {
     min-width: 100%;
 }
+
+/* ==========================================================================
+    BLOG
+========================================================================== */
+a.thumbnail {
+  border: none;
+}
+
+section h3 {
+  display: inline-block;
+  margin-top: 0;
+}
+
+#blog {
+  margin-top: 53px;
+}
+
+.all {
+  @import "partials/navicon";
+
+  display: inline-block;
+  position: relative;
+  float: right;
+
+  h3 {
+    vertical-align: middle;
+    margin: 0 0 0 12px;
+    display: inline-block;
+  }
+}
+
+.section-header {
+  padding: 0 11px;
+}
+.section-content {
+  margin-top: 6px;
+}
+
 
 @import "partials/footer";
