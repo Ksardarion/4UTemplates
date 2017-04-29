@@ -93,7 +93,6 @@ h3 {
 
 body {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  min-width: 380px;
 }
 
 @media (min-width: 1200px) {
@@ -742,6 +741,18 @@ section h3 {
 
 .section-content {
   margin-top: 6px;
+}
+
+/* ==========================================================================
+    write_review_block
+========================================================================== */
+#review-block {
+  margin-top: 33px;
+}
+
+.gray-box {
+  height: 166px;
+  background: #e2e2e2;
 }
 
 footer {

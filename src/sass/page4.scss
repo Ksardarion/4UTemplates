@@ -61,5 +61,16 @@ section h3 {
   margin-top: 6px;
 }
 
+/* ==========================================================================
+    write_review_block
+========================================================================== */
+#review-block {
+  margin-top: 33px;
+}
+
+.gray-box {
+  height: 166px;
+  background: $gray;
+}
 
 @import "partials/footer";
