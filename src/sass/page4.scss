@@ -23,6 +23,51 @@ body {
 #main-slider img {
     min-width: 100%;
 }
+/* ==========================================================================
+    TABS
+========================================================================== */
+#tabs{
+	margin-top: 31px;
+	background: $gray;
+	text-transform: uppercase;
+	font-size: $nav-font-size;
+	a{
+		border: none;
+		border-radius: 0;
+		color: $text-dark;
+	}
+}
+#job{
+	.col-sm-8{
+		padding-right: 60px;
+	}
+	h3{
+		margin: 5px 0;
+	}
+	p:first-child{
+		margin-top: 30px;
+	}
+	h2{
+		font-size: 20px;
+        font-weight: bold;
+	}
+	.progress, .progress-bar{
+		box-shadow: none;
+		height: 27px;
+	}
+	.progress{
+		text-align: right;
+		background: $white;
+		border-radius: 0;
+		margin-bottom: 2px;
+	}
+	.progress-bar{
+		text-align: left;
+		text-indent: 5px;
+		color: $text-dark;
+		background: $gray;
+	}
+}
 
 /* ==========================================================================
     BLOG
