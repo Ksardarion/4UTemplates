@@ -628,6 +628,58 @@ header .nav-toggle.active span:after {
 }
 
 /* ==========================================================================
+    TABS
+========================================================================== */
+#tabs {
+  margin-top: 31px;
+  background: #e2e2e2;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#tabs a {
+  border: none;
+  border-radius: 0;
+  color: #191919;
+}
+
+#job .col-sm-8 {
+  padding-right: 60px;
+}
+
+#job h3 {
+  margin: 5px 0;
+}
+
+#job p:first-child {
+  margin-top: 30px;
+}
+
+#job h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#job .progress, #job .progress-bar {
+  box-shadow: none;
+  height: 27px;
+}
+
+#job .progress {
+  text-align: right;
+  background: #fff;
+  border-radius: 0;
+  margin-bottom: 2px;
+}
+
+#job .progress-bar {
+  text-align: left;
+  text-indent: 5px;
+  color: #191919;
+  background: #e2e2e2;
+}
+
+/* ==========================================================================
     BLOG
 ========================================================================== */
 a.thumbnail {
