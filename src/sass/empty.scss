@@ -7,12 +7,6 @@ body {
   font-family: $font;
   min-width: 380px;
 }
-// psd template width is 815px so we must cotrol the container width
-@media (min-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
 
 // styles for HEADER
 @import "partials/header";
